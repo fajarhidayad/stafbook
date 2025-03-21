@@ -1,7 +1,7 @@
 <x-layout title="Register">
-    <div class="container">
+    <section style="height: 80vh" class="d-flex flex-column justify-content-center align-items-center">
         <h2>Register</h2>
-        <form action="{{ route('register') }}" method="POST">
+        <form action="{{ route('register') }}" method="POST" class="container" style="max-width: 450px">
             @csrf
             <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
@@ -36,6 +36,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-    </div>
+    </section>
 
 </x-layout>
